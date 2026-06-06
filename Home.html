@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <!--Setting up a connection to the css file to enhance the apearance of the webpage, also setting up the icon from the locally stored file-->
+        <link rel="icon" href="images/social media/Parallelogram.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type = "text/css" href="design.css">
+    </head>
+    <header>
+        <!--Main header-->
+        <h1>Home</h1>
+        <!--br allows me to space out the content to make things more seperated-->
+        <br>
+    </header>
+    <body>
+        <br>
+        <!--Creating the section for the buttons, setting up the link reference to the other pages, and make the button afterwards-->
+        <section id = "button">
+            <a href = "Home.html" >
+            <button>Home</button></a>
+            <a href = "Portfolio.html" >
+            <button>Portfolio</button></a>
+            <a href = "Contact Me.html" >
+            <button>Contact me</button></a>
+        </section>
+        <br><br>
+        <!--Making the navigation bar so that the user can navigate through h2 headers-->
+        <!--This works by referring to the id of the header-->
+        <nav id="navbar">
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#work_experience">Work Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#interests">Interests and Hobbies</a>
+        </nav>
+
+        <!--giving a header an id so that it could be navogated-->
+        <h2 id = "about">My Contact Details</h2>
+        <!--Setting up the section so i could edit the appearance on css later-->
+        <section id="details">
+            <p>Name: Nazar</p>
+            <!--Setting up the link to my school email which can be opened through outlook-->
+            <a href = "mailto:250055933@aston.ac.uk" target="_blank" rel="noopener noreferrer"><p>School email: 250055933@aston.ac.uk</p></a>
+            <p>Student number: 250055933</p>
+        </section><br><br><br>
+        <h2 id = education>Education</h2>
+        <section id = "Education">
+            <p>Bachelor's Degree in Computer science at Aston university</p>
+            <p>GCSE Creative imedia, Computer science and Engineering</p>
+            <p>A levels Computer science, Mathematics and Design and Technology</p>
+        </section><br><br><br>
+        <h2 id = work_experience>Work Experience</h2>
+        <section id="Experiences">
+            <p>Teaching Assistant at CAD modelling in high school for F1 event.</p>
+            <p>AI training at ExamBinary company for creating artificial intelligence suitable for education centres and interview preperations.</p>
+            <p>Virtual meetings with Willmott Dixon Company to learn how to discuss financial decisions for building new schools.</p>
+        </section><br><br><br>
+        <h2 id = skills>Skills</h2>
+        <section id="Skills">
+            <!--Setting up each content to the same class so that i don't just edit the overall appearance of the section, but the appearance of the content inside-->
+            <div class = "skill">
+                <!--This tag allows me to select the image through the local storage and set the width and height. I also wrote text that would go under the image-->
+                <img src = "images/languages/python.png" width = "100" height="100"><p>Experienced</p>
+            </div>
+            <div class="skill">
+                <img src = "images/languages/html.png" width = "100" height="100"><p>Intermediate</p>
+            </div>
+            <div class="skill">
+                <img src="images/languages/css.png" width = "100" height="100"><p>Intermediate</p>
+            </div>
+            <div class="skill">
+                <img src="images/languages/csharp.png" width = "100" height="100"><p>Experienced</p>
+            </div>
+            <div class="skill">
+                <img src="images/languages/js.png" width = "100" height="100"><p>Intermediate</p>
+            </div>
+        </section><br><br><br>
+        
+        <h2 id = interests>Interests and hobbies</h2>
+        <section id="hobbies">
+            <p>I always enjoyed watching tutorials on creating advanced programs through youtube videos.</p>
+            <p>I like going to dll website sometimes to check on some interesting libraries that i could use for my future projects.</p>
+            <p>I make it a habit to practice making projects that will effectively contribute to society's quality of life. </p>
+            <p>I am currently researching how AI is developed to enhance my knowledge.</p>
+        </section><br><br><br>
+        
+    </body>
+    <!--Setting up the footer for the page. This would be on every page to follow the consistancy of the design-->
+    <footer>
+        <section id = "bottom">
+            <br><br>
+            <h3>Links to prefessional profiles</h3>
+            <!--Creating a hyperlink to my linkedin and github profile page that when clicked, opens a new tab and keeps the website on tabs-->
+            <!--Adding pictures next to the links so that links to professional profiles would look like images instead of text links-->
+            <a href = "https://github.com/gaydeynazar-cpu" target = "_blank"><img src = "images/social media/Github.png" width="50" height="50"></a>
+            <a href="https://www.linkedin.com/in/nazar-gaydey-815038372/" target = "_blank"><img src = "images/social media/linkedin.png" width="50" height="50"></a>
+        </section>
+    </footer>
+</html>

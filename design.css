@@ -1,0 +1,127 @@
+/*setting h1 and h3 text colour to a white looking clour*/
+h1, h3{
+    color: aliceblue;
+}
+/*h2 will be orange as it's located inside the white background. Im also seeting the font to more modern-looking one*/
+/*all h2 headers will be displayed in the middle*/
+h2{
+    font-family: sans-serif;
+    color: orange;
+    text-align: center;
+}
+/*Setting up the background header to be the locally stored image file*/
+header{
+    background-image: url(images/social\ media/Orange\ header.png);
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+body{
+    font-family: sans-serif;
+}
+/*This allows me to distribute the members of the sections evenly horizontally by using justify content attribute*/
+#Skills{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+/*Making so that every text code next to the image would display under the image for all members of the skill class*/
+.skill{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+/*This doesn't change the appearance of the buttons but spaces the buttons across the screen width instead*/
+#button{
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+/*This edits the appearance of the buttons to the orange fill and white font colour*/
+button, #Submit_button{
+    color: aliceblue;
+    background-color: orange;
+    border: none;
+    /*This code was a part of the research which allowed me to make buttons look like a prarallelogram by bending each angle by 30 degrees*/
+    transform: skew(-30deg);
+    -webkit-transform: skew(-30deg);
+    -o-transform: skew(-30deg);
+    -moz-transform: skew(-30deg);
+    -ms-transform: skew(-30deg);
+}
+/*Changes the font colour to dark orange whenever the button is hovered over*/
+button:hover, #Submit_button:hover{
+    color: orangered
+}
+/*On the portfolio html file, this allows me to place all images to the right of the text and set the border colour to orange*/
+.Project img{
+    float: right;
+    border-style: solid;
+    border-color: orange;
+}
+/*Sets all my details to the centre of the screen*/
+#details{
+    text-align: center;
+}
+/*hashtag allows me to reference to the id rather than tag*/
+/*All these section will have their content evenly distributed across the width just like the buttons*/
+#Experiences, #hobbies, #Education{
+    display: flex;
+    flex-wrap: auto;
+    margin: auto;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+}
+/*Same thing as the header here*/
+#bottom{
+    background-image: url(images/social\ media/city.png);
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/*Changing the colour of any input box's border to solid orange*/
+input, textarea, select{
+    border-style: solid;
+    border-color: orange;
+}
+/*Manually setting up the appearance of the radio buttons so that i can edit the colours of the borders*/
+input[type="radio"] {
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 2px solid orange;
+            border-radius: 50%;
+            outline: none;
+            background-color: white;
+            cursor: pointer;
+        }
+/*This is the code for setting up the fill of the radio button to orange when the radio button is selected*/
+input[type="radio"]:checked {
+            background-color: orange;
+        }
+/*Navbar is pretty basic but i just set background colour to orange and all text is evenly aligned*/
+#navbar {
+  background-color: orange;
+  padding: 15px;
+  text-align: center;
+}
+/*Setting text inside to white appearance*/
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 18px;
+}
+/*Same thing how buttons work*/
+#navbar a:hover {
+  color: orangered;
+}

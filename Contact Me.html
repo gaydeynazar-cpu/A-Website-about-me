@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <link rel="icon" href="images/social media/Parallelogram.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type = "text/css" href="design.css">
+    </head>
+    <header>
+        <h1>Contact Me</h1>
+        <br>
+    </header>
+    <body>
+        <br>
+        <section id = "button">
+            <a href = "Home.html" >
+            <button>Home</button></a>
+            <a href = "Portfolio.html" >
+            <button>Portfolio</button></a>
+            <a href = "Contact Me.html" >
+            <button>Contact me</button></a>
+        </section>
+        <p>My Phone number: 07447494481</p><br><br>
+        <!--Here i am making a form and setting the onsubmit variable so that when the form is submitted, it would run the function from a javascript-->
+        <form id = "form" onsubmit= "return validateForm()">
+            <label for="Project_name">Give the name of the project you want to enquire about:</label>
+            <!--Here i am making the selection pole for the projects i made-->
+            <!--I didn't understand whether the user must prompt the project it is working on, or refer to our project-->  
+            <select id ="Project_name" name = "Project_name" required>
+                <!--Disable selection is the initial value of the textbox-->
+                <option value="" disabled selected>-- Select a project --</option>
+                <option value="device tracker">Device Tracker</option>
+                <option value="Skeletal Code 2025">Skeletal Code 2025</option>
+                <option value="Aston fitness website">Aston fitness webiste</option>
+            </select><br><br>
+            <!--Here i am setting up the label for the date selection by referring to the identical id-->
+            <label for = "Date">Give the date when you wish to enquire about the potential project occuring:</label>
+            <!--Using type date, this would convert a textbox into a date selection box-->
+            <!--Required attribute makes the input mandatory to be put in and therefore the user won't be able to submit if not filled in-->
+            <input type = "date" id = "Date" required><br><br>
+            <label for="Name">Insert you name:</label>
+            <input type = "text" id = "Name" required><br><br>
+            <p>Give a brief description you wish to enquire about:</p>
+            <!--Here i made a text area that is 100 characters wide and 8 character tall. This can be manually adjusted in the website to user's liking-->
+            <textarea id = "Project_description" rows = "8" cols = "100" required></textarea>
+            <br><br><br>
+            <!--Creating Email and Confirm_Email text box-->
+            <label for="Email">Enter your Email:</label>
+            <input type = "email" id = "Email" required><br><br>
+            <label for="Confirm_Email">Confirm your Email:</label>
+            <input type = "email" id = "Confirm_Email" required>
+            <br><br><br>
+            <label for="Phone_number">Enter your Phone Number:</label>
+            <input type = "tel" id = "Phone_number" required><br><br>
+            <p>Please select how you prefer to be contacted:</p>
+            <!--Radio button allows the user to only select one option. These options are linked together by using the same name value-->
+            <input type="radio" id="choice" value ="Phone" name = "choice">
+            <label for="phone_choice">Phone</label><br>
+            <input type="radio" id="choice" value ="Text" name = "choice">
+            <label for="text_choice">Text</label><br>
+            <input type="radio" id="choice" value = "Email" name = "choice">
+            <label for="Email_choice">Email</label>
+            <!--Error message will be displayed whenever there's an issue. The value text will be changed via javascript-->
+            <p id="errorMessage" style="color: red;"></p><br><br><br>
+            <!--Setting up the submit button-->
+            <input type="submit" id = "Submit_button" value="Submit">
+        </form>
+    <!--Setting up the connection to the local javascript file-->
+    <!--Since this is the only page that requires javascript, it's the only one that has the connection-->
+    <script src = "Validation.js"></script>
+    </body>
+    <section id = "bottom">
+        <br><br>
+        <h3>Links to prefessional profiles</h3>
+        <a href = "https://github.com/gaydeynazar-cpu" target = "_blank"><img src = "images/social media/Github.png" width="50" height="50"></a>
+        <a href="https://www.linkedin.com/in/nazar-gaydey-815038372/" target = "_blank"><img src = "images/social media/linkedin.png" width="50" height="50"></a>
+
+    </section>
+</html>
